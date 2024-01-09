@@ -3,6 +3,7 @@ import {
     PhGitFork,
     PhArticle,
     PhGear,
+    PhUserList,
 } from "@phosphor-icons/vue";
 import { ref } from "vue";
 
@@ -32,21 +33,9 @@ const useAside = () => {
         // },
         {
             id: 2,
-            iconName: PhGitFork,
-            to: route("admin.categories.index"),
-            title: "Categories",
-        },
-        {
-            id: 3,
-            iconName: PhArticle,
-            to: route("admin.posts.index"),
-            title: "Posts",
-        },
-        {
-            id: 4,
-            iconName: PhGear,
-            to: route("admin.settings.index"),
-            title: "Settings",
+            iconName: PhUserList,
+            to: route("admin.users.index"),
+            title: "Users",
         },
     ];
 

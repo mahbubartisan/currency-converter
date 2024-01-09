@@ -42,14 +42,14 @@
                         <!-- Display the status -->
                         <span
                             :class="
-                                item[column.key] === 1
+                                item[column.key] == 1
                                     ? 'bg-green-100 text-green-800'
                                     : 'bg-red-100 text-red-800'
                             "
                             class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full"
                         >
                             {{
-                                item[column.key] === 1 ? "active" : "deactivate"
+                                item[column.key] == 1 ? "active" : "deactivate"
                             }}
                         </span>
                     </template>
